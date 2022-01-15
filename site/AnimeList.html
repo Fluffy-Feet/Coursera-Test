@@ -3,21 +3,97 @@
 <head>
 	<meta charset="uft-8">
 	<title>Anime Website</title>
+	<style>
+#top {
+	color: royalblue;
+	font-size: 60px;
+	text-align: center;
+}
+h1.subtitle {
+	color: steelblue;
+	font-size: 35px;
+	margin-left: 50px;
+}
+h1.subtitle span {
+	font-size: 75px;
+}
+li {
+	list-style: square;
+	font-size: 20px;
+	color: mediumblue;
+}
+li:nth-child(even){
+	color: darkred;
+}
+h2{
+	font-size: 30px;
+	color: rebeccapurple;
+}
+section.watchlist li{
+	list-style: none;
+	font-size: 50px;
+}
+section.watchlist li:nth-child(odd){
+	background-color: lightgrey;
+}
+section.watchlist li:nth-child(even){
+	background-color: darkgrey;
+}
+footer {
+	font-size: 20px;
+}
+section.navigation li{
+	list-style: none;
+}
+li a:link, li a:visited, p a:link, p a:visited {
+
+	text-decoration: none;
+	background-color: purple;
+	color: darkgrey;
+	border: 1px black;
+	display: block;
+	width: 300px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+section.navigation li:nth-child(1){
+	margin-left: 150px;
+	font-size: 50px;
+}
+section.navigation li:nth-child(2){
+	margin-left: 450px;
+	font-size: 50px;
+}
+section.navigation li:nth-child(3){
+	margin-left: 750px;
+	font-size: 50px;
+}
+p.bottom {
+	margin-left: 500px;
+	font-size: 40px;
+}
+li a:hover, p a:hover{
+	background-color: royalblue;
+}
+li a:active, p a:active{
+	background-color: mediumslateblue;
+}
+</style>
 </head>
 <body>
 	<h1 id="top">Anime List Website</h1>
-<section>
+<section class="navigation">
 <h3>
 	<ul>
-		<li><a href="#towatch">To Watch</a></li>
-		<li><a href="#Watching">Watching</a></li>
-		<li><a href="#Watched">Watched</a></li>	
+		<li><a href="#towatch" title="To Watch">To Watch</a></li>
+		<li><a href="#Watching" title="Watching now">Watching</a></li>
+		<li><a href="#Watched" title="Already watched">Watched</a></li>	
 	</ul>
 </h3>
 </section>
 <br><br><br><br>
 <section id="towatch">
-	<h1>Watching List:</h1>
+	<h1 class="subtitle"><span>W</span>atch List:</h1>
 <br><br>
 <h2>Georges:</h2>
 <h3>
@@ -32,7 +108,7 @@
 	</ul>
 </h3>
 </section><br><br>
-<h2>Marilyne:</h2>
+<h2>Samir:</h2>
 <section>
 <h3>
 	<ul>
@@ -49,7 +125,7 @@
 </section>
 <br><br><br><br><br><br>
 <section id="Watching">
-<h1>Watching</h1><br>
+<h1 class="subtitle"><span>W</span>atching:</h1><br>
 <h2>Georges:</h2>
 <h3>
 <ul>
@@ -58,7 +134,7 @@
 </ul>
 </h3>
 <br><br>
-<h2>Marilyne:</h2>
+<h2>Samir:</h2>
 <h3>
 <ul>
 	<li>Sord Art Online</li>
@@ -68,23 +144,25 @@
 </section>
 <br><br><br><br><br><br><br>
 <section id="Watched">
-<h1>Watched Series</h1>
-<h1>
-<div>.</div><br>
-<div>.</div><br>
-<div>.</div><br>
-<div>.</div><br>
-<div>.</div><br>
-<div>.</div><br>
-<div>.</div><br>
-<div>.</div><br>
-<div>.</div><br>
-<div>.</div><br>
-<div>.</div><br>
-<div>.</div><br>
-</h1>
+<h1 class="subtitle"><span>W</span>atched Series:</h1>
+<section class="watchlist">
+<ul>
+	<li><div>.</div></li>
+	<li><div>.</div></li>
+	<li><div>.</div></li>
+	<li><div>.</div></li>
+	<li><div>.</div></li>
+	<li><div>.</div></li>
+	<li><div>.</div></li>
+	<li><div>.</div></li>
+	<li><div>.</div></li>
+	<li><div>.</div></li>
+	<li><div>.</div></li>
+	<li><div>.</div></li>
+</ul>
 </section>
-<p><a href="#top">Back to the top</a></p>
+</section>
+<p class="bottom"><a href="#top" title="To top">Back to the top</a></p>
 <footer>Back to main website: <a href="index.html">Main Website</a></footer>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
